@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>個数を入力する画面</title>
+</head>
+<body>
+	<h2>個数を入力してください。</h2>
+	<form action="/mvc_app/ShoppingServlet" method="post"> <!-- 送信先のサーブレットを要指定 -->
+
+		鉛筆(1本 100円)
+		個数:
+		<input type="text" name ="num1"><br>  <!-- 属性nameは固定、 "パラメータ名"を変える -->
+		ボールペン(1本 150円)
+		個数:
+		<input type="text" name ="num2"><br>  <!-- 属性nameは固定、 "パラメータ名"を変える -->
+		消しゴム(1個 30円)
+		個数:
+		<input type="text" name ="num3"><br>  <!-- 属性nameは固定、 "パラメータ名"を変える -->
+		<br>
+		<input type="submit" value="購入する">
+	</form>
+</body>
+</html>
+

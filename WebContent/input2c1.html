@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>会社名を選択する画面</title>
+</head>
+<body>
+	<h2>会社名を選択してください。</h2>
+	<form action="./JSP/dbaccess.jsp" method="post"> <!-- 送信先のJSPを要指定 -->
+
+		会社<br> <!-- 属性nameは固定、 "パラメータ名"を変える -->
+		<input type="radio" name ="coname" value="1">〇〇商事<br>
+		<input type="radio" name ="coname" value="2">△△堂<br>
+		<input type="radio" name ="coname" value="3">□□製薬<br>
+		<input type="radio" name ="coname" value="4">××ソフト<br>
+		<input type="submit" value="表示する">
+	</form>
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>値を入力する画面</title>
+</head>
+<body>
+	<h2>余剰を求めるための値を2つ入力してください。</h2>
+	<form action="/mvc_app/ReminderServlet" method="get"> <!-- 送信先のサーブレットを要指定 -->
+	<input type="text" name = "num1"><br>  <!-- 属性nameは固定 -->
+	<input type="text" name = "num2"><br>
+	<input type="submit" value="計算">
+	</form>
+</body>
+</html>
+

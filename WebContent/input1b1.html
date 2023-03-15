@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>賃料と詳細条件を入力する画面</title>
+</head>
+<body>
+	<h2>賃料と詳細条件を入力してください。</h2>
+	<form action="/mvc_app/LeaseServlet" method="post"> <!-- 送信先のサーブレットを要指定 -->
+
+		<h3>賃料</h3>
+		<input type="radio" name ="rent" value="～50000円">～50000円<br>
+		<input type="radio" name ="rent" value="～70000円">～70000円<br>
+		<input type="radio" name ="rent" value="～90000円">～90000円<br>
+		<input type="radio" name ="rent" value="90000円～">90000円～<br>
+		<br>
+		<h3>詳細条件</h3>
+		<input type="checkbox" name ="check" value="オートロック">オートロック<br>  <!-- 属性nameは固定、 "パラメータ名"を変える -->
+		<input type="checkbox" name ="check" value="風呂・トイレ別">風呂・トイレ別<br>
+		<input type="checkbox" name ="check" value="エアコン付">エアコン付<br>
+		<input type="checkbox" name ="check" value="二階以上">二階以上<br>
+
+		<input type="submit" value="送信">
+	</form>
+</body>
+</html>
+

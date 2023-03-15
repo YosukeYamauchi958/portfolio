@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>点数入力画面</title>
+</head>
+<body>
+	<h2>点数を入力してください。</h2>
+	<form action="/mvc_app/ScoreServlet" method="get"> <!-- 送信先のサーブレットを要指定 -->
+	<input type="text" name ="num"><br>  <!-- 属性nameは固定、 "パラメータ名"を変える -->
+	<input type="submit" value="送信">
+	</form>
+</body>
+</html>
+

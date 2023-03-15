@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>入力画面</title>
+</head>
+<body>
+	<h2>住まいと趣味を入力してください。</h2>
+	<form action="/mvc_app/RegistServlet" method="post"> <!-- 送信先のサーブレットを要指定 -->
+	住まい(セッションに登録):<input type="text" name = "str1"><br>
+	趣味(リクエストに登録):  <input type="text" name = "str2"><br>
+	<input type="submit" value="登録">
+	</form>
+</body>
+</html>
+
